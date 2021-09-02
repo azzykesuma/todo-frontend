@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>TODO</h1>
+      <button id="toggleTheme"><img src="./images/icon-moon.svg" alt="icon-moon" id="imageToggle"></button>
+    </div>
+  </header>
+  <section class="main">
+    <div class="formContainer">
+      <form action="" id="addList">
+        <label for="todo"></label>
+        <input type="text" name="todo" placeholder="Create a new To do..." id="todoInput" required/>
+        <div class="checkBoxtop">
+          <input type="checkbox" id="topCheck" />
+          <label for="topCheck"></label>
+        </div>
+      </form>
+    </div>
+
+    <div class="todoContainer">
+      <ul></ul>
+      
+      <div class="bottomPart">
+        <p class="taskRemain"></p>
+        <button class="filter" id="clear"> Clear Completed</button>
+      </div>
+    </div>
+    <div class="filterContainer">
+      <button class="filter" id="all">All</button>
+      <button class="filter" id="active">Active</button>
+      <button class="filter" id="complete">Completed</button>
+    </div>
+      <footer>
+        <p>Drag and drop to reorder list</p>
+      </footer>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>
